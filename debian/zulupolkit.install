@@ -1,0 +1,3 @@
+usr/bin/zuluPolkit
+usr/share/polkit-1/actions/org.zulucrypt.zulupolkit.policy
+debian/zuluPolkit.1 usr/share/man/man1/

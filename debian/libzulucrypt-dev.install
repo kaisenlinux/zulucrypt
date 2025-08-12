@@ -1,0 +1,3 @@
+usr/include/zuluCrypt/libzuluCrypt.h
+usr/lib/*/pkgconfig/libzuluCrypt.pc
+usr/lib/*/libzuluCrypt.so

@@ -1,0 +1,6 @@
+usr/bin/zuluMount-gui
+usr/share/man/man1/zuluMount-gui.1
+usr/share/zuluCrypt/translations/zuluMount-gui/*qm usr/share/zuluCrypt/translations/zuluMount-gui/
+usr/share/icons/hicolor/48x48/apps/zuluMount*png usr/share/icons/hicolor/48x48/apps/
+debian/icons/zuluMount.xpm usr/share/pixmaps
+debian/zulumount-gui.desktop usr/share/applications

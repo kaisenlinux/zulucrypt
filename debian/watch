@@ -1,0 +1,2 @@
+version=4
+https://github.com/mhogomchungu/zuluCrypt/tags .*/tags/v?(\d\S+)\.tar\.(?:bz2|gz|xz)

@@ -1,0 +1,376 @@
+zulucrypt (7.1.0-1kaisen) kaisen-packages; urgency=medium
+
+  * New upstream version 7.1.0
+  * Update the Standards-Version
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 07 Aug 2025 22:24:31 +0000
+
+zulucrypt (6.2.0-1) unstable; urgency=medium
+
+  * New upstream version 6.2.0.
+  * debian/control:
+      - Updated the depends of zulupolkit package.
+  * debian/copyright:
+      - Updated file.
+  * debian/watch: 
+      - Updated the search rule to make it compliant with new
+        standards of the GitHub.
+  * Updated the libzulucrypt1.2.0.symbols and 
+    libzulucrypt-exe1.2.0.symbols files.
+  * Using the new DH level format. Consequently:
+      - debian/compat: removed.
+      - debian/control: changed from 'debhelper' to 'debhelper-compat' in
+        Build-Depends field.
+
+ -- Marcio de Souza Oliveira <marciosouza@debian.org>  Sun, 05 Feb 2023 02:52:25 +0000
+
+zulucrypt (6.0.0-1) experimental; urgency=medium
+
+  * New upstream version 6.0.0
+  * debian/salsa-ci.yml: disable allow reprotest failure.
+
+ -- Marcio de Souza Oliveira <marciosouza@debian.org>  Wed, 17 Mar 2021 01:20:34 +0000
+
+zulucrypt (5.7.1-2) unstable; urgency=medium
+
+  * debian/rules:
+      - Updated the LDFLAGS.
+  * debian/tests/control:
+      - Updated to allow reprotest failure.
+
+ -- Marcio de Souza Oliveira <marciosouza@debian.org>  Thu, 07 May 2020 01:09:31 +0000
+
+zulucrypt (5.7.1-1) unstable; urgency=medium
+
+  * New upstream version 5.7.1.
+  * debian/control:
+      - Bumped DH level to 12.
+      - Bumped Standards-Version to 4.5.0.
+      - Updated the libzulucrypt-plugins description.
+  * debian/tests/control:
+      - Created to perform a trivial test.
+  * Updated the libzulucrypt-plugins.install file.
+  * Updated the libzulucrypt*.symbols files.
+
+ -- Marcio de Souza Oliveira <marciosouza@debian.org>  Thu, 16 Apr 2020 15:09:16 +0000
+
+zulucrypt (5.7.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+      - Bumped Standards-Version to 4.4.1.
+  * Removed the menu files zulu*-gui.menu.
+  * Updated the file libzulucrypt1.2.0.symbols.
+
+ -- Marcio de Souza Oliveira <marciosouza@debian.org>  Sat, 07 Dec 2019 22:14:09 -0300
+
+zulucrypt (5.6.0-2) unstable; urgency=medium
+
+  * Rebuilds to source-only upload.
+
+ -- Marcio de Souza Oliveira <marciosouza@debian.org>  Sun, 03 Nov 2019 21:31:49 -0300
+
+zulucrypt (5.6.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bumped DH level to 11.
+  * debian/control:
+      - Updated the zulupolkit description. (Closes: #895702)
+  * debian/copyright:
+      - Updated file.
+  * debian/patches:
+      - Removed the fix_spelling file.
+      - Removed the linker-flags-ordering.patch file.
+  * Removed the files because they are no longer needed:
+      - org.debian.pkexec.zulu*-gui.policy.
+      - zulu*-gui-pkexec.
+      - zulu*-gui.links.
+      - zulu*-gui-pkexec.1.
+  * Updated the file libzulucryptpluginmanager1.0.0.install.
+  * Updated the file libzulucrypt1.2.0.symbols.
+
+ -- Marcio de Souza Oliveira <marciosouza@debian.org>  Thu, 22 Aug 2019 00:04:10 +0000
+
+zulucrypt (5.5.0-1) unstable; urgency=medium
+
+  * New upstream release. 
+    (Closes: #927402, #928298, #928332)
+  * debian/control:
+      - Bumped Standards-Version to 4.4.0.
+  * debian/copyright:
+      - Updated file.
+  * debian/patches:
+      - Created the fix_zulupolkit_policy.patch to allow normal users to run
+        zulu*-gui. (Closes: #910410)
+      - Removed the fix_spelling because this can broken translations files.
+      - Removed the linker-flags-ordering.patch.
+  * debian/upstream:
+      - Updated the metadata file.
+  * Updated the files libzulucrypt*.symbols.
+  * Updated the file zulucrypt-gui.install to add MIME type specification file. 
+
+ -- Marcio de Souza Oliveira <marciosouza@debian.org>  Tue, 23 Jul 2019 20:42:46 +0000
+
+zulucrypt (5.4.0-3) unstable; urgency=medium
+
+  * New debian release.
+  * Created the directory debian/upstream.
+  * debian/control:
+      - Bumped Standards-Version to 4.3.0.
+      - Updated the Maintainer e-mail.
+      - Updated the Vcs-Git field.
+      - Updated the Vcs-Browser field.
+  * debian/patches:
+      - Created the patch linker-flags-ordering.patch.(Closes: #922038)
+        Thanks Ahzod, Luca and Peter Ziegler.
+  * debian/upstream:
+      - Created the metadata file.
+
+ -- Marcio de Souza Oliveira <marciosouza@debian.org>  Tue, 19 Feb 2019 00:11:00 +0000
+
+zulucrypt (5.4.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/control:
+      - Bumped Standards-Version to 4.1.3.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Sun, 28 Jan 2018 17:32:27 +0000
+
+zulucrypt (5.4.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+      - Bumped Standards-Version to 4.1.2.
+  * debian/copyright:
+      - Updated file.
+  * Updated the file libzulucrypt-exe1.2.0.symbols.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Fri, 29 Dec 2017 13:31:23 +0000
+
+zulucrypt (5.2.0-3) unstable; urgency=medium
+
+  * debian/control:
+      - Added the policykit-1 as dependency of zulupolkit.
+        Thanks Simon McVittie (Closes: #878801).
+      - Bumped Standards-Version to 4.1.1.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Wed, 25 Oct 2017 23:53:26 +0000
+
+zulucrypt (5.2.0-2) unstable; urgency=medium
+
+  * Created the files zulupolkit.install and zuluPolkit.1.
+  * debian/control:
+      - Bumped Standards-Version to 4.1.0.
+      - Created the package zulupolkit to acomodated the new tool
+        zuluPolkit.
+      - Removed qtkeychain-dev the Build-Depends.
+        Thanks Mhogo Mchungu (Closes: #875291).
+  * debian/rules:
+      - Enabled the polkit support at build time.
+      - Updated file.
+  * Removed the files because are unnecessary with zulupolkit:
+      - The files zulu*-gui-pkexec and zulu*-gui-pkexec.1.
+      - The files org.debian.pkexec.zulu*-gui.policy.
+      - The files zulu*-gui.links.
+  * Removed the files zulu*-gui.menu.
+  * Updated the files zulu*-gui.desktop.
+  * Updated the files zulu*-gui.install.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Sun, 10 Sep 2017 23:32:46 +0000
+
+zulucrypt (5.2.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bumped DH level to 10.
+  * debian/control:
+      - Bumped Standards-Version to 4.0.0.
+      - Updated Build-Depends.
+      - Updated file.
+  * debian/copyright:
+      - Updated file.
+  * debian/rules:
+      - Removed option --parallel.
+      - Disabled the polkit support at build time.
+  * Updated the file libzulucrypt1.2.0.symbols.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Fri, 04 Aug 2017 22:32:16 +0000
+
+zulucrypt (5.1.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+      - Updated file.
+  * debian/patches:
+      - Updated patch fix_spelling.
+  * Updated the file libzulucrypt-exe1.2.0.symbols.
+  * Updated the files zulu*-gui.install to install icons hicolor.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Thu, 13 Apr 2017 15:51:50 +0000
+
+zulucrypt (5.0.2-2) unstable; urgency=medium
+
+  * Updated the files zulu*-gui-pkexec to use /bin/sh instead
+    /bin/bash.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Thu, 15 Dec 2016 18:49:59 +0000
+
+zulucrypt (5.0.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+      - Updated the long description of libzulucrypt-plugins package
+        to add generic_header plugin.
+      - Updated the long description of zulumount-gui package to add
+        support to unlock cryfs, encfs, gocryptfs and ecryptfs.
+      - Inserted the field Suggests in zulumount-gui package.
+      - Updated the long description the all packages.
+  * debian/copyright:
+      - Updated file.
+  * debian/rules:
+      - Updated to enable polkit support at build time.
+      - Updated file.
+  * debian/patches:
+      - Updated patch fix_spelling.
+  * Created new symbol files for libzulucrypt1.2.0,
+    libzuluCrypt-exe.so.1.2.0,libzulucryptpluginmanager1.0.0.
+  * Updated the files zulu*-gui-pkexec. Thanks Michael Biebl.
+    (Closes: #844698)
+  * Updated the file zulucrypt-gui.install to added files en_US.qm
+    and fr_FR.qm in zulucrypt-gui package.
+  * Updated the file zulumount-gui.install to added files en_US.qm
+    and fr_FR.qm in zulumount-gui package.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Mon, 12 Dec 2016 11:30:59 +0000
+
+zulucrypt (4.9.0-3) unstable; urgency=medium
+
+  * debian/control:
+      - Removed the build-depend libqtkeychain0. Thanks Adrian Bunk.
+        (Closes: #844751)
+  * debian/patches:
+      - Updated patch fix_spelling.
+ 
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Thu, 08 Dec 2016 00:08:27 +0000
+
+zulucrypt (4.9.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/control:
+      - Bumped Standards-Version to 3.9.8.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Fri, 06 May 2016 22:57:52 +0000
+
+zulucrypt (4.9.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Added the new plugin generic_header in package libzulucrypt-plugins.
+  * Created new symbol files for packages libzulucryptpluginmanager1.0.0
+    and libzulucrypt1.2.0.
+  * Updated the files zulu*-gui-pkexec to run with user ID that started
+    application.
+  * debian/patches:
+      - Updated patch fix_spelling.
+      - Removed the patch fix_manpage.
+  * debian/watch:
+      - Updated to avoid binary files in upstream directory.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Sun, 17 Apr 2016 20:29:18 +0000
+
+zulucrypt (4.8.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/watch:
+      - Updated file.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Sun, 20 Mar 2016 20:12:38 -0300
+
+zulucrypt (4.8.0-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+      - Bumped Standards-Version to 3.9.7.
+      - Updated vcs-browser field.
+      - Updated vcs-git field.
+  * debian/patches:
+      - Removed the fix_mkfs patch because upstream fixed
+      the problem.
+      - Updated fix_spelling.
+      - Updated fix_manpage.
+  * debian/watch:
+      - Updated for version 4.
+  * Add the de_DE.qm translation file in package zulucrypt-gui.
+  * Created new symbol files for libzulucrypt1.2.0,
+    libzuluCrypt-exe.so.1.2.0,libzulucryptpluginmanager1.0.0.
+  * Updated the files zulu*-gui-pkexec to run without user ID
+    that started application because in version 4.8.0 not
+    working.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Wed, 03 Feb 2016 10:08:11 -0200
+
+zulucrypt (4.7.7-3) unstable; urgency=medium
+
+  * Rebuild use QT5.
+  * debian/control:
+      - The libqt4-dev has been removed the Build-Depends.
+      - The qtbase5-dev, qtchooser, qt5-qmake and
+      qtbase5-dev-tools has been inserted in Build-Depends.
+  * debian/patches:
+      - created fix_mkfs to fix problem with mkfs not found.
+      - Thank to Francis Banyikwa by patch fix_mkfs.
+  * debian/rules:
+      - uptated to use QT5 in zuluCrypt-gui and zuluMount-gui.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Wed, 18 Nov 2015 22:31:16 -0200
+
+zulucrypt (4.7.7-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Thu, 12 Nov 2015 23:15:52 -0200
+
+zulucrypt (4.7.7-1) experimental; urgency=medium
+
+  * New upstream release.
+  * debian/copyright:
+    - update to new source url.
+    - updated file.
+  * debian/patches: updated fix_spelling.
+  * Created new symbol files for libzulucrypt1.2.0,
+    libzuluCrypt-exe.so.1.2.0,libzulucryptpluginmanager1.0.0.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Sat, 03 Oct 2015 18:36:12 -0300
+
+zulucrypt (4.7.6-2) unstable; urgency=medium
+
+  * Updated the d/control to remove libtcplay-dev the Build-Depends.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Thu, 24 Sep 2015 00:06:29 -0300
+
+zulucrypt (4.7.6-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Changed the homepage of upstream.
+  * Added new plugin hmac in package libzulucrypt-plugins.
+  * Updated the d/control to insert reference the hmac
+    plugin.
+  * Created new symbol files for libzulucrypt1.2.0,
+    libzuluCrypt-exe.so.1.2.0,libzulucryptpluginmanager1.0.0.
+  * Updated the files zulu*-gui-pkexec to run with
+    user ID that started application.
+  * Added zuluCrypt.pdf in package zulucrypt-gui.
+  * Updated the copyright file.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Tue, 23 Jun 2015 22:33:08 -0300
+
+zulucrypt (4.7.5-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Removed blank lines in the watch file.
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Wed, 13 May 2015 00:16:50 -0300
+
+zulucrypt (4.7.5-1) experimental; urgency=low
+
+  * Initial release (Closes: #703911)
+
+ -- Marcio de Souza Oliveira <m.desouza20@gmail.com>  Sun, 29 Mar 2015 23:46:49 -0300

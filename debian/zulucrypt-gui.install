@@ -1,0 +1,8 @@
+usr/bin/zuluCrypt-gui
+usr/share/man/man1/zuluCrypt-gui.1
+usr/share/doc/zuluCrypt/zuluCrypt.pdf usr/share/zuluCrypt/
+usr/share/mime/packages/zuluCrypt.xml usr/share/mime/packages/
+usr/share/zuluCrypt/translations/zuluCrypt-gui/*qm usr/share/zuluCrypt/translations/zuluCrypt-gui/
+usr/share/icons/hicolor/48x48/apps/zuluCrypt*png usr/share/icons/hicolor/48x48/apps/
+debian/icons/zuluCrypt.xpm usr/share/pixmaps
+debian/zulucrypt-gui.desktop usr/share/applications
